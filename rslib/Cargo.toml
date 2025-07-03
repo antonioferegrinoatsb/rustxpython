@@ -1,0 +1,18 @@
+[package]
+name = "rslib"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "rslib"
+crate-type = ["cdylib"]
+
+[dependencies]
+glob = "0.3.2"
+regex = "1.10.3"
+pyo3 = { version = "0.25.0", features = ["extension-module"] }
+rand = "0.9.1"
+rayon = "1.10.0"
+
+[dev-dependencies]
+pretty_assertions = "1.4.1"
